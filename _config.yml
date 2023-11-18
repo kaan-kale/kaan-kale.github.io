@@ -37,8 +37,9 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-
-
+github:
+  token:
+    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
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -339,7 +339,7 @@ https://templatemo.com/tm-512-moonlight
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form id="contact" action="" method="post">
+                        <form id="contact" action="send_email.php" method="post">
                             <div class="row">
                                 <div class="col-md-12">
                                   <fieldset>
@@ -428,6 +428,41 @@ https://templatemo.com/tm-512-moonlight
             log: function() { }
         };
     }
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('form-submit').addEventListener('click', function () {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+    
+            var formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('subject', subject);
+            formData.append('message', message);
+    
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'send_email.php');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    // You can add further actions here, like showing a success message to the user.
+                } else {
+                    console.error('Error:', xhr.statusText);
+                    // You can handle errors here.
+                }
+            };
+            xhr.onerror = function () {
+                console.error('Request failed');
+                // You can handle errors here.
+            };
+    
+            xhr.send(formData);
+        });
+    });
     </script>
 </body>
 </html>

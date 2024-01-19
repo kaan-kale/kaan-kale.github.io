@@ -295,23 +295,23 @@ nav a:hover::before {
 }
 
 .slides .slide:nth-child(1) {
-  background-image: url(../img/first_bg.jpg);
+  background-image: url(../img/boat-8063006.jpg);
 }
 .slides .slide:nth-child(2) {
   /* background-image: url(../img/second_bg.jpg); */
-  background-image: url(../img/first_bg.jpg);
+  background-image: url(../img/house-8376550.jpg);
 }
 .slides .slide:nth-child(3) {
-  background-image: url(../img/third_bg.jpg);
+  background-image: url(../img/mountain-8120620.jpg);
 }
 .slides .slide:nth-child(4) {
-  background-image: url(../img/first_bg.jpg);
+  background-image: url(../img/istanbul-3551596.jpg);
  }
 .slides .slide:nth-child(5) {
-  background-image: url(../img/first_bg.jpg);
+  background-image: url(../img/istanbul-3551596.jpg);
 }
 .slides .slide:nth-child(6) {
-  background-image: url(../img/first_bg.jpg);
+  background-image: url(../img/istanbul-3551596.jpg);
 }
 .slides .slide img {
   width: 100%;
